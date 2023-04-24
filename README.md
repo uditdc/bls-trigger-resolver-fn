@@ -1,0 +1,1 @@
+# bls-trigger-resolver-fn
