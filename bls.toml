@@ -2,8 +2,10 @@ name = "bls-trigger-resolver-fn"
 version = "1.0.0"
 
 [deployment]
-permission = "public"
 nodes = 1
+permissions = [
+  "https://ethers-http-wrapper.deno.dev"
+]
 
 [build]
 dir = "build"
