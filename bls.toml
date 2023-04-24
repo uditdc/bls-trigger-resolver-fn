@@ -1,0 +1,16 @@
+name = "bls-trigger-resolver-fn"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "bls-trigger-resolver-fn_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "bls-trigger-resolver-fn.wasm"
+command = "npm run build:release"

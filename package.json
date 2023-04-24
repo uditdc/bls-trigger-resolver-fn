@@ -1,0 +1,24 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "APACHE-2.0",
+  "scripts": {
+    "clean": "rm -rf build",
+    "build:release": "npm run clean; asc index.ts --target release",
+    "build:debug": "npm run clean; asc index.ts --target debug"
+  },
+  "dependencies": {
+    "@blockless/sdk": "^1.1.0",
+    "as-wasi": "^0.4.6",
+    "assemblyscript": "^0.20.10",
+    "wasi": "^0.0.6"
+  },
+  "private": "false",
+  "bls": {
+    "functionId": "blockless-function_hello-world-template-1.0.0",
+    "manifest": {
+      "contentType": "json"
+    }
+  }
+}
