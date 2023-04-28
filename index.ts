@@ -4,9 +4,9 @@ import { http, json } from "@blockless/sdk"
 
 http.HttpComponent.serve((request: http.Request) => {
   const abiRequest = new json.JSON.Obj()
-  abiRequest.set('abi', ['function updatePrice(string memory symbol, uint256 price, uint256 timestamp) external'])
-  abiRequest.set('method', 'updatePrice')
-  abiRequest.set('args', ['BTC', '2924212302300', (<i64>(Date.now() / 1000)).toString()])
+  abiRequest.set('abi', ['function setString(string newValue)'])
+  abiRequest.set('method', 'setString')
+  abiRequest.set('args', [(<i64>(Date.now() / 1000)).toString()])
 
   const clientHeaders = new Map<string, string>()
   clientHeaders.set('Content-Type', 'application/json')
