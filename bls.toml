@@ -1,5 +1,6 @@
 name = "bls-trigger-resolver-fn"
 version = "1.0.0"
+content_type = "text"
 
 [deployment]
 nodes = 1
